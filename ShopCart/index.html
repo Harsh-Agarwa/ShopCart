@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+           background-color: black;
+           color: white;
+           width: 2500px;
+           height: 12vh;
+       }
+       li{
+           padding: 6px;
+           display: inline;
+       }
+       .cards{
+           display: flex;
+           align-items: flex-start;
+       }
+       nav{
+           display: flex;
+           align-items: center;
+           padding: 20px;
+       }
+       .logo{
+           display: flex;
+           align-items: center;
+       }
+       
+       nav ul{
+           height: 25px;
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
+       }
+       nav ul li{
+           list-style: none;
+           padding: 20px 15px;
+       }
+       nav ul li:hover{
+           font-weight: bolder;
+       }
+       .yoo{
+           margin-left: 250px;
+           
+           color: coral;
+       }
+       .search{
+           display: flex;
+           align-items: center;
+           
+       }
+       .search input{
+           display: flex;
+           align-items: flex-end;
+           width: 300px;
+           height: 22px;
+           border-radius: 8px;
+           margin: 5px;
+           padding: 3px;
+           margin-top: 0px;
+           margin-left: 400px;
+       }
+       .search button{
+           font-weight: 750;
+       }
+       .slider{
+           
+           margin-top: 30px;
+           margin-bottom: 0px;
+           margin-left: 155px;
+           overflow: hidden;
+           
+       }
+       .card{
+           max-width: 90vw;
+           margin: 10px;
+           padding: 10px;
+       }
+       .cards{
+           display: flex;
+           align-items: flex-start;
+       }
+       .card-item{
+           display: inline;
+           justify-content: center;
+           margin: 15px;
+       }
+       .container{
+           min-height: 90vh;
+       }
+       .button{
+           padding: 4.5px;
+           background-color: chartreuse;
+           color: cornflowerblue;
+           border: 3px solid crimson;
+           border-radius: 6px;
+        
+           cursor: pointer;
+       }
+       footer{
+           width: 2500px;
+           height: 53px;
+           background-color: burlywood;
+           color: blueviolet;
+           /* margin-left: 100px; */
+       }
+       .flex-all-center{
+           
+           display: flex;
+           /* text-align: center; */
+           
+
+       }
+       @media screen and (max-width: 1000px){
+           nav{
+               flex-direction: column;
+           }
+           .slider{
+               height: 23vh;
+           }
+           .logo{
+               justify-content: center;
+               margin: 13px;
+           }
+           nav ul{
+               justify-content: center;
+           }
+           .search{
+               justify-content: center;
+           }
+           .search input{
+               margin: 15px;
+           }
+           nav ul{
+               height: 35px;
+           }
+           .card-item img{
+               width: 150px;
+           }
+       }
+   
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" width="50px">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <H3 class="yoo">  SHOPCART.com</H3>
+            <div class="search">
+                <input type="text" placeholder="Search Here ">
+                <button class="button"> Search </button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        
+        <div class="slider">
+            <img src="commerce.jpg" width="1200px" height="500px">
+        </div>
+        <div class="card">
+            <h2> JOIN THE CRICKET FUN !!</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="bat.jpg" width="140px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Bats </p>
+                        <p class="text-center"> Min 20% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="gloves.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Gloves </p>
+                        <p class="text-center"> Min 60% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="ball.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Balls </p>
+                        <p class="text-center"> Min 40% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="armgaurd.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Arm-Guards </p>
+                        <p class="text-center"> Min 25% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="gaurd.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Gaurds </p>
+                        <p class="text-center"> Min 55% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="goggles.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Goggles </p>
+                        <p class="text-center"> Min 25% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="helmet.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Hemlets </p>
+                        <p class="text-center"> Min 35% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="pads.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Pads </p>
+                        <p class="text-center"> Min 30% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="shoes.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Shoes </p>
+                        <p class="text-center"> Min 40% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="stumps.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Stumps </p>
+                        <p class="text-center"> Min 55% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="wicketkeeper.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Cricket Wicket-Keeper Gloves </p>
+                        <p class="text-center"> Min 40% OFF </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2> HAVE FUN WITH CLOTHES !!</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="belt.jpg" width="140px">
+                    <div class="lines">
+                        <p class="text-center"> Men's Belt </p>
+                        <p class="text-center"> Min 30% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="blazer.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Blazer </p>
+                        <p class="text-center"> Min 10% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="cap.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Caps </p>
+                        <p class="text-center"> Min 50% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="coat.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Coat </p>
+                        <p class="text-center"> Min 15% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="jeans.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Jeans </p>
+                        <p class="text-center"> Min 25% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="menshoe.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Shoes </p>
+                        <p class="text-center"> Min 35% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="tie.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Tie </p>
+                        <p class="text-center"> Min 40% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="shorts.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Shorts  </p>
+                        <p class="text-center"> Min 30% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="tshirts.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's T-Shirts </p>
+                        <p class="text-center"> Min 35% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="shirt.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Shirts </p>
+                        <p class="text-center"> Min 25% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="pants.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center">  Men's Pants </p>
+                        <p class="text-center"> Min 35% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2> LAPTOP WORLD !!</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="dell.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Dell Laptop </p>
+                        
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="acer.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Acer Laptop </p>
+                       
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="apple.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Apple Laptop </p>
+                       
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="asus.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Asus Laptop </p>
+                       
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="hp.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Hp Laptop </p>
+                        
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="honor.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Honor Laptop </p>
+                        
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="lenovo.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Lenovo Laptop </p>
+                       
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="mi.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Xiamoi Laptop </p>
+                        
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="micfrosoft.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Micfrosoft Laptop </p>
+                     
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="msi..jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> MSI Laptop </p>
+                       
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="samsung.jpg" width="200px">
+                    <div class="lines">
+                        <p class="text-center"> Samsung Laptop </p>
+                        <p class="text-center"> Min 30% OFF </p>
+                        <p class="text-center"> Limited Stock Available. </p>
+                        <p class="text-center"> GRAB IT NOW !! </p>
+                        <button class="btn"> Buy Now !! </button>
+                    </div>
+                </div>
+            </div>    
+        </div> 
+    </div>
+    <footer class="flex-all-center">
+        <p> <b> CopyRight &copy; ShopCart.com</b>  </p>
+    </footer>
+</body>
+
+</html>
